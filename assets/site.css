@@ -10,3 +10,23 @@ body{font-size:16px;line-height:1.7}h1,h2,h3,p{overflow-wrap:break-word}.contain
 @media(min-width:1151px){.hero h1{font-size:clamp(58px,5vw,72px)}}
 /* Keep the full team visible in the wide mobile crop. */
 @media(max-width:720px){.safety-art{object-position:50% 40%}.hero-art-top{top:18px}.hero-bottom{gap:16px}}
+
+/* Safety in action: photography-led, responsive editorial section */
+.photo-stories{padding:104px 0 112px;background:#fff}
+.photo-stories-heading{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:33px}
+.photo-stories-heading h2{font-family:var(--display);font-size:clamp(36px,4.25vw,58px);line-height:1.12;letter-spacing:-.055em;margin:0;color:var(--navy)}
+.photo-stories-heading h2 em{color:#ad7b37;font-style:normal}
+.photo-stories-heading>p{color:#60717a;font-size:16px;line-height:1.8;max-width:420px;margin:0}
+.photo-stories-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.photo-story{position:relative;isolation:isolate;overflow:hidden;aspect-ratio:4/5;margin:0;background:linear-gradient(145deg,#243f4e,#0a1c28);border-radius:4px}
+.photo-story::after{content:"";position:absolute;inset:30% 0 0;background:linear-gradient(0deg,rgba(5,20,27,.87),rgba(5,20,27,.4) 55%,transparent);pointer-events:none;z-index:1}
+.photo-story img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .7s ease;filter:saturate(.83)}
+.photo-story:hover img{transform:scale(1.04)}
+.photo-story figcaption{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:30px;color:#fff}
+.photo-story figcaption span{display:block;margin-bottom:12px;color:#e9ba6b;font-size:11px;font-weight:800;letter-spacing:.15em}
+.photo-story figcaption strong{display:block;max-width:290px;font-family:var(--display);font-size:clamp(23px,2.5vw,34px);line-height:1.16;letter-spacing:-.04em}
+.photo-stories-note{margin:18px 0 0;color:#60717a;font-size:12px;line-height:1.6}
+@media(max-width:960px){.photo-stories{padding:80px 0}.photo-stories-heading>p{max-width:310px}.photo-stories-grid{gap:12px}.photo-story figcaption{padding:20px}.photo-story figcaption strong{font-size:23px}}
+@media(max-width:720px){.photo-stories{padding:70px 0}.photo-stories-heading{display:block}.photo-stories-heading>p{max-width:540px;margin-top:17px}.photo-stories-grid{grid-template-columns:1fr;gap:16px}.photo-story{aspect-ratio:6/5}.photo-story figcaption{padding:26px}.photo-story figcaption strong{font-size:28px}.photo-stories-heading h2{font-size:clamp(36px,8vw,50px)}}
+@media(max-width:370px){.photo-story{aspect-ratio:1/1}.photo-story figcaption strong{font-size:24px}}
+@media(prefers-reduced-motion:reduce){.photo-story img{transition:none}.photo-story:hover img{transform:none}}
