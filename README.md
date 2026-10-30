@@ -45,3 +45,28 @@ If images appear missing in production:
 - The gallery uses genuine Unsplash stock photographs; they do **not** depict JM staff, projects, customers, or compliance achievements.
 - Source pages: https://unsplash.com/photos/hard-hats-and-safety-vests-wjHdeYmI-XU (Tanya Paquet), https://unsplash.com/photos/two-construction-workers-in-hard-hats-and-vests-EuYrxc_Amkc (Eric Stoynov), https://unsplash.com/photos/workers-with-safety-vests-and-hard-hats-near-a-truck-iJdbR4wGrfo (Haewon Oh).
 - The source pages list the photographs under the Unsplash License. Before final client delivery, consider downloading and hosting optimized copies locally to remove the third-party runtime dependency. Preserve source credits in this README.
+
+## October 2026 — Johannes business-card branding refresh
+
+- `assets/jm-official-logo.webp` was carefully cropped from the client-provided JM business card. It preserves the real printed JM initials and hard-hat artwork, rather than inventing another logo. A higher-resolution original supplied directly by the client would be preferable for future brand use.
+- Updated hero and corporate colours to the client's more vivid black / yellow / white construction-card direction.
+- Added the four focus areas shown on the new card: health and safety management, compliance & audits, construction safety, and risk assessments & solutions.
+- Added a dedicated Johannes Pieterse contact/profile block with direct phone, email and WhatsApp links and his Moreletapark, Pretoria East location.
+- Used recognizable Facebook and Instagram icon artwork with **plain-text social handles only**. Exact profile URLs were not verified, so no guessed clickable social links were inserted.
+- Kept Thapelo Prince Legwabe as the previously listed senior consultant; confirm with JM before removing or editing his public contact information.
+- Construction/safety photos are illustrative (the local team picture is AI-generated; external gallery photos are representative stock). They are **not photos of JM staff, achievements or client sites**. Obtain approval or replace with authentic approved company photography before public client launch.
+- No claims of proprietary training accreditation or client certifications were added. Training wording refers to arranging accredited training through relevant providers.
+
+### Cloudflare Pages / Git deployment
+
+This is still a dependency-free static website with `index.html` in the repository root and all local assets in `assets/`. Cloudflare Pages can import `main` from GitHub (framework None, root `/`, build command `exit 0`, output directory `.`). Verify the Cloudflare integration is specifically **Pages**, not an unrelated Workers application, and confirm that the deployment actually serves the site's HTML and images.
+
+To review: open the PR's deployment preview (if available); inspect mobile/desktop, `/assets/jm-official-logo.webp`, `/assets/safety-team.webp`, contact links, navigation, and gallery image loading. Merge to `main` only after approval. A connected Pages project may auto-deploy on merge. Older deployment-specific Vercel and Cloudflare URLs can continue showing previous versions.
+
+### Regression checks
+
+Run from the repo root:
+
+```sh
+node --test tests/*.test.cjs
+```
