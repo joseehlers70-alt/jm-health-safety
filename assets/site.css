@@ -42,3 +42,99 @@ html.js [data-reveal].visible{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){
   html.js [data-reveal].visible{animation:none}
 }
+
+
+/* 2026 business-card refresh: official JM logo, stronger construction palette */
+:root{--navy:#101c24;--navy-deep:#09151c;--gold:#f7b918;--cream:#fbf8f1}
+.hero{background:linear-gradient(112deg,#09151c 0%,#102734 74%,#183641 100%)}
+.hero h1{font-size:clamp(52px,5.6vw,81px);letter-spacing:-.06em}
+.hero .underline-swoosh{color:var(--gold)}
+.hero .hero-art-frame{border:4px solid rgba(255,186,19,.14)}
+.hero-art-stamp{border-color:rgba(255,203,69,.8)}
+.hero-art-top{color:#fff}
+.photo-stories{background:#f9faf7}
+.photo-story{border-bottom:5px solid #f8ba19}
+.photo-story figcaption span{color:#ffc638}
+.site-header .brand,.footer .brand{gap:11px;align-items:center}
+.brand .official-brand-img{width:69px!important;height:66px!important;object-fit:contain;display:block;flex-shrink:0;background:#fff;padding:3px;border-radius:4px;border:1px solid #e4e6e8}
+.site-header .brand-wordmark strong{font-size:19px;letter-spacing:-.03em}
+.site-header .brand-wordmark small{font-size:9px;letter-spacing:.20em}
+.footer .brand .official-brand-img{width:66px!important;height:61px!important}
+.jp-capabilities{padding:95px 0 105px;background:#f3f4f1}
+.jp-capabilities-head{max-width:900px;margin-bottom:35px}
+.jp-capabilities-head h2{font:800 clamp(35px,4.4vw,56px)/1.09 var(--display);letter-spacing:-.055em;color:#111d25;margin:16px 0 13px}
+.jp-capabilities-head h2 em{font-style:normal;color:#aa7616}
+.jp-capabilities-head>p:last-child{max-width:600px;font-size:16px;color:#68747a;margin:0}
+.jp-capabilities-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.jp-capabilities-grid article{position:relative;overflow:hidden;min-width:0;min-height:288px;background:#fff;padding:27px 23px 29px;border:1px solid #d9dfdf;border-bottom:5px solid #f7b918;box-shadow:0 12px 35px rgba(10,24,31,.045)}
+.jp-cap-icon{width:56px;height:56px;display:grid;place-items:center;background:#fff4d4;color:#936400;border-radius:10px}
+.jp-cap-icon .icon{width:28px;height:28px}
+.jp-cap-num{position:absolute;right:20px;top:27px;font-size:13px;font-weight:900;color:#bcc4c5}
+.jp-capabilities-grid h3{font:800 clamp(19px,1.9vw,24px)/1.15 var(--display);letter-spacing:-.035em;color:#13242d;margin:24px 0 12px}
+.jp-capabilities-grid p{color:#66747a;font-size:13px;line-height:1.7;margin:0}
+.jp-profile{padding:0;background:#0c1c26;color:#fff;overflow:hidden}
+.jp-profile-layout{display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(40px,5.5vw,84px);align-items:center;min-height:660px;padding-block:74px}
+.jp-profile-intro{position:relative;z-index:1;min-width:0}
+.jp-profile .eyebrow{color:#eeb82c}
+.jp-profile .eyebrow-line{background:var(--gold)}
+.jp-profile-intro h2{font:800 clamp(38px,4.5vw,63px)/1.09 var(--display);letter-spacing:-.06em;margin:18px 0}
+.jp-profile-intro h2 em{color:#ffc638;font-style:normal}
+.jp-profile-intro>p:not(.eyebrow){color:#d4dce0;max-width:560px;line-height:1.8;font-size:15px;margin:0 0 30px}
+.jp-person-title{display:flex;align-items:center;gap:18px;margin-bottom:25px}
+.jp-initials{display:grid;place-items:center;width:63px;height:63px;border-radius:7px;background:#f6bb28;color:#101c24;font:900 25px var(--display)}
+.jp-person-title>div{display:flex;flex-direction:column;gap:3px}
+.jp-person-title strong{font-size:19px;letter-spacing:-.025em}
+.jp-person-title div span{font-size:13px;color:#cbd4d8}
+.jp-profile-links{display:grid;gap:0;max-width:560px;margin-bottom:23px}
+.jp-profile-links>a,.jp-profile-links>span{display:flex;align-items:center;gap:13px;min-height:49px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.15);color:#f9fafb;font-size:14px;overflow-wrap:anywhere}
+.jp-profile-links .icon{width:21px;height:21px;color:#f5bc24;flex-shrink:0}
+.jp-profile-links .jp-arr{margin-left:auto;color:#a9bbbf;width:16px;height:16px}
+.jp-profile-links a:hover span{text-decoration:underline;text-decoration-color:#ffc638}
+.jp-social-group{display:grid;gap:11px;margin:0 0 28px}
+.jp-social-group>span{display:flex;align-items:center;gap:12px;font-size:13px;overflow-wrap:anywhere}
+.jp-brand-icon{display:block;flex-shrink:0;width:20px;height:20px;color:#fff}
+.jp-social-group .facebook-icon{color:#fff}
+.jp-social-group .instagram-icon{color:#f6c044}
+.jp-contact-button{width:max-content;max-width:100%}
+.jp-profile-visual{position:relative;min-width:0;min-height:590px;align-self:stretch;background:#263a43;overflow:hidden}
+.jp-profile-scene{position:absolute;inset:0}
+.jp-profile-scene img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;filter:saturate(.82)}
+.jp-profile-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,22,29,.07) 10%,rgba(9,22,29,.1) 55%,rgba(5,18,25,.9) 100%);pointer-events:none}
+.jp-profile-logo{position:absolute;z-index:2;right:22px;top:22px;background:#fff;padding:10px;border-radius:3px;box-shadow:0 14px 40px rgba(0,0,0,.2)}
+.jp-profile-logo img{display:block;width:134px;height:125px;object-fit:contain}
+.jp-profile-caption{position:absolute;z-index:2;bottom:23px;left:22px;right:22px;font-size:10px;font-weight:800;letter-spacing:.13em;color:#fff}
+.jp-footer-social{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.jp-footer-social strong{font-size:11px;overflow-wrap:anywhere}
+.jp-footer-social .jp-brand-icon{width:17px;height:17px;color:#f9bb25}
+@media(max-width:1150px){
+ .jp-capabilities-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .jp-capabilities-grid article{min-height:245px}
+ .jp-profile-layout{gap:35px}
+ .jp-profile-visual{min-height:580px}
+ .site-header .brand-wordmark strong{font-size:17px}
+ .brand .official-brand-img{width:60px!important;height:59px!important}
+}
+@media(max-width:780px){
+ .jp-profile-layout{grid-template-columns:1fr;padding-block:65px;gap:35px}
+ .jp-profile-visual{min-height:460px}
+ .jp-capabilities{padding:70px 0}
+ .jp-capabilities-grid{gap:12px}
+}
+@media(max-width:520px){
+ .brand .official-brand-img{width:51px!important;height:48px!important;padding:2px}
+ .site-header .brand-wordmark strong{font-size:14px}
+ .site-header .brand-wordmark strong span{font-size:10px}
+ .site-header .brand-wordmark small{font-size:7px}
+ .jp-capabilities-grid{grid-template-columns:1fr}
+ .jp-capabilities-grid article{min-height:0;padding:25px}
+ .jp-capabilities-grid h3{font-size:23px}
+ .jp-capabilities-head h2{font-size:38px}
+ .jp-profile-layout{padding-block:60px}
+ .jp-profile-intro h2{font-size:42px}
+ .jp-profile-links>a,.jp-profile-links>span{font-size:12px}
+ .jp-social-group>span{font-size:11px}
+ .jp-profile-visual{min-height:405px}
+ .jp-profile-logo{right:14px;top:14px;padding:7px}
+ .jp-profile-logo img{width:95px;height:91px}
+ .jp-profile-caption{font-size:9px;left:16px;bottom:16px}
+}
